@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.text-responsive {
+  font-size: calc(50% + 1vw + 1vh);
+}
+
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

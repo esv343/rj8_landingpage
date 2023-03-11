@@ -16,15 +16,16 @@
 </head>
 <body>
     <main class="container">
-        <div class="row">
+        <!-- Seccion bienvenida -->
+        <section class="row">
             <div class="col text-center mt-3">
                 <h1>Welcome to RJ8's website!</h1>
                 <p>Here you can find access to all my social media and latest YouTube videos, know what I'm working on, my upcoming content and more!</p>
 
-                <p>Feel free to contact me through the form on this site or through my social media. You can also know more about me in the "About" and "Blog" sections <em>&#40;under development&#41;</em>.</p>
+                <p>Feel free to contact me through the <a href="#form" class="text-decoration-none">form</a> on this site or through my social media. You can also know more about me in the "About" and "Blog" sections <em>&#40;under development&#41;</em>.</p>
             </div>
 
-            <div class="col-12 text-center mt-5">
+            <div class="col-12 text-center mt-5 mb-0">
                 <!-- Youtube -->
                 <a href="https://www.youtube.com/@rj8mp" target="_blank"><i class="fab fa-youtube fs-1" style="color: #ed302f;"></i></a>
                 <!-- Twitter -->
@@ -38,32 +39,144 @@
                 <!-- Telegram -->
                 <a href="https://t.me/+8brW3fzdDL1iZTJh" target="_blank"><i class="fab fa-telegram fs-1" style="color: #229ED9;"></i></a>
             </div>
-        </div>
+        </section>
 
-        <div class="row mt-5 text-center">
+        <!-- Seccion videos -->
+        <section class="row mt-5 text-center">
             <hr class="mt-3">
-            <div class="col-md-4 col-sm-12 mt-sm-5 mt-lg-1">
-                <h4>Next show: March 12</h4>
+            <div class="col-md-4 col-sm-12 mt-4 mb-4">
+                <h4 class="fw-bold text-responsive">Next show: March 12</h4>
                 <div class="ratio ratio-16x9">
                     <iframe src="https://www.youtube.com/embed/p5kLLJ13Uxw" title="Upcoming Show" allowfullscreen></iframe>
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 mt-sm-5 mt-lg-1">
-                <h4>My latest live show</h4>
+            <div class="col-md-4 col-sm-12 mt-4 mb-4">
+                <h4 class="fw-bold text-responsive">My latest live show</h4>
                 <div class="ratio ratio-16x9">
                     <iframe src="https://www.youtube.com/embed/p5kLLJ13Uxw" title="Upcoming Show" allowfullscreen></iframe>
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 mt-sm-5 mt-lg-1">
-                <h4>My latest video</h4>
+            <div class="col-md-4 col-sm-12 mt-4 mb-4">
+                <h4 class="fw-bold text-responsive">My latest video</h4>
                 <div class="ratio ratio-16x9">
                     <iframe src="https://www.youtube.com/embed/p5kLLJ13Uxw" title="Upcoming Show" allowfullscreen></iframe>
                 </div>
             </div>
+        </section>
 
-        </div>
+        <!-- Seccion Noticias -->
+        <section class="row text-center">
+            <hr class="mt-3">
+
+            <div class="col-12">
+                <h2 class="fw-bold">News</h2>
+            </div>
+
+            <div class="col-md-6 col-sm-12 mt-4">
+                <h4 class="fw-bold">What's going on</h4>
+                <p>I'm currently working on "The Black Celebration Tour - A Fans tribute" project. I can't wait to share some snippets of the work achieved so far with you! This time, besides the great audio recreation, we'll also enjoy a video projection of the whole concert to create an amazing live experience!</p>
+            </div>
+
+            <div class="col-md-6 col-sm-12 mt-4">
+                <h4 class="fw-bold">What's coming next</h4>
+                <ul class="list-group list-group-flush">
+                    <button class="list-group-item list-group-item-action list-group-item-light">March 19 - <em>Black Celebration Anniversary Show</em></button>
+                    <button class="list-group-item list-group-item-action list-group-item-secondary">April 2 - <em>Deconstruction Time Again</em></>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seccion donaciones -->
+        <section class="row text-center">
+            <hr class="mt-3">
+            <div class="col-12 mt-4 mb-4">
+                <h4 class="fw-bold">Show your support!</h4>
+                <p>Thank you for getting this far on the website! If you like what I do and want me to keep making more content, you can show your support by donating through <em>PayPal</em> or <em>Buy Me A Cofee</em> by clicking the links below. Any amount counts!</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="card mb-3 p-2 me-xl-3 me--0" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/paypal.png" class="img-fluid rounded mx-auto" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">PayPal</h4>
+                                <p class="card-text">Support my content through PayPal. Thank you so much for your donation!</p>
+                                <a href="https://www.paypal.com/paypalme/kanirj8" target="_blank" class="btn btn-primary text-light">Donate!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 p-2 ms-xl-3 ms-0" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/bmac.png" class="img-fluid rounded mx-auto" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">Buy Me A Coffee</h4>
+                                <p class="card-text">Show your appreciation through Buy Me A Coffee. Thank you for donating!</p>
+                                <a href="https://www.buymeacoffee.com/rj8mp" target="_blank" class="btn btn-primary text-light">Donate!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion contacto -->
+        <section class="row text-center">
+            <hr class="mt-3">
+            <div class="col-12 mt-4">
+                <!-- #TODO Revisar ancho de texto segun tamaño -->
+                <h4 class="fw-bold">Contact me!</h4>
+                <p>If you want to send me a message, or want to buy my covers, tracks and more, contact me via the form below. Can't wait to hear from you &#128521;</p>
+            </div>
+
+            <form class="mx-auto" id="form">
+                <!-- Campo nombre -->
+                <div class="row mb-3">
+                    <label for="inputText3" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputText3" required>
+                    </div>
+                </div>
+                
+                <!-- Campo asunto -->
+                <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Subject</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputText3" required>
+                    </div>
+                </div>
+                
+                <!-- Campo email -->
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" required>
+                  </div>
+                </div>
+
+                <!-- Campo de texto -->
+                <div class="row mb-3">
+                    <label for="textArea" class="col-sm-2 col-form-label">Message</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" id="textArea" required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary text-light">SEND</button>
+            </form>
+        </section>
+            
+
+
     </main>
 
 
