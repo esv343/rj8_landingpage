@@ -1,8 +1,31 @@
 @charset "UTF-8";
+/* Titulos para videos */
 .text-responsive {
-  font-size: calc(50% + 1vw + 1vh);
+  font-size: calc(30% + 1vw + 1vh);
 }
 
+/* Media queries para divs de donaciones y contacto */
+@media screen and (min-width: 1024px) {
+  #form {
+    width: 50%;
+  }
+  .div-ancho-medio p {
+    width: 50%;
+    margin: auto;
+  }
+  .div-ancho-75 p {
+    width: 75%;
+    margin: auto;
+  }
+  .img-donacion {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .img-donacion {
+    width: 100px;
+  }
+}
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -40,7 +63,7 @@
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #F2EFD3;
-  --bs-dark: #212529;
+  --bs-dark: #0D0B05;
   --bs-primary-rgb: 223, 120, 0;
   --bs-secondary-rgb: 180, 174, 0;
   --bs-success-rgb: 25, 135, 84;
@@ -48,7 +71,7 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 242, 239, 211;
-  --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-rgb: 13, 11, 5;
   --bs-primary-text: #0a58ca;
   --bs-secondary-text: #6c757d;
   --bs-success-text: #146c43;
@@ -2013,13 +2036,13 @@ progress {
 
 .table-dark {
   --bs-table-color: #fff;
-  --bs-table-bg: #212529;
-  --bs-table-border-color: #373b3e;
-  --bs-table-striped-bg: #2c3034;
+  --bs-table-bg: #0D0B05;
+  --bs-table-border-color: #25231e;
+  --bs-table-striped-bg: #191712;
   --bs-table-striped-color: #fff;
-  --bs-table-active-bg: #373b3e;
+  --bs-table-active-bg: #25231e;
   --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #323539;
+  --bs-table-hover-bg: #1f1d18;
   --bs-table-hover-color: #fff;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3058,19 +3081,19 @@ textarea.form-control-lg {
 
 .btn-dark {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #212529;
-  --bs-btn-border-color: #212529;
+  --bs-btn-bg: #0D0B05;
+  --bs-btn-border-color: #0D0B05;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #424649;
-  --bs-btn-hover-border-color: #373b3e;
-  --bs-btn-focus-shadow-rgb: 66, 70, 73;
+  --bs-btn-hover-bg: #31302b;
+  --bs-btn-hover-border-color: #25231e;
+  --bs-btn-focus-shadow-rgb: 49, 48, 43;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #4d5154;
-  --bs-btn-active-border-color: #373b3e;
+  --bs-btn-active-bg: #3d3c37;
+  --bs-btn-active-border-color: #25231e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #212529;
-  --bs-btn-disabled-border-color: #212529;
+  --bs-btn-disabled-bg: #0D0B05;
+  --bs-btn-disabled-border-color: #0D0B05;
 }
 
 .btn-outline-primary {
@@ -3193,19 +3216,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-dark {
-  --bs-btn-color: #212529;
-  --bs-btn-border-color: #212529;
+  --bs-btn-color: #0D0B05;
+  --bs-btn-border-color: #0D0B05;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #212529;
-  --bs-btn-hover-border-color: #212529;
-  --bs-btn-focus-shadow-rgb: 33, 37, 41;
+  --bs-btn-hover-bg: #0D0B05;
+  --bs-btn-hover-border-color: #0D0B05;
+  --bs-btn-focus-shadow-rgb: 13, 11, 5;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #212529;
-  --bs-btn-active-border-color: #212529;
+  --bs-btn-active-bg: #0D0B05;
+  --bs-btn-active-border-color: #0D0B05;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #212529;
+  --bs-btn-disabled-color: #0D0B05;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #212529;
+  --bs-btn-disabled-border-color: #0D0B05;
   --bs-gradient: none;
 }
 
@@ -6820,7 +6843,7 @@ textarea.form-control-lg {
 
 .text-bg-dark {
   color: #fff !important;
-  background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(13, 11, 5, var(--bs-bg-opacity, 1)) !important;
 }
 
 .link-primary {
@@ -6873,10 +6896,10 @@ textarea.form-control-lg {
 }
 
 .link-dark {
-  color: #212529 !important;
+  color: #0D0B05 !important;
 }
 .link-dark:hover, .link-dark:focus {
-  color: #1a1e21 !important;
+  color: #0a0904 !important;
 }
 
 .ratio {
