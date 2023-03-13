@@ -13,9 +13,66 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8ddddc79a5.js" crossorigin="anonymous"></script>
     <title>RJ8 - Home</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 </head>
-<body>
-    <main class="container">
+<body style="padding-top: 56px;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient fixed-top" id="navbar">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                  <img src="./assets/img/rj8logo_circleframe.png" alt="RJ8-Logo" width="40" height="40">  
+                </a>
+    
+                <!-- Boton para el menu movil -->
+                <button class="navbar-toggler btn"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="#menu"
+                aria-expanded="false"
+                aria-label="mostrar/ocultar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Menu de navegacion -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+    
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a 
+                            href="" 
+                            class="nav-link dropdown-toggle"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            id="dropdown-menu">
+                            Projects
+                            </a>
+    
+                            <ul class="dropdown-menu" aria-labelledby="#dropdown-menu">
+                                <li><a href="#" class="dropdown-item">World Violation Tour Remastered</a> </li>
+                                <li><a href="#" class="dropdown-item">Black Celebration Tour</a> </li>
+                                <!-- <li><a href="#" class="dropdown-item">Elemento 3</a> </li> -->
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#form" class="nav-link">Contact</a></li>
+                    </ul>
+    
+                    
+                    <button class="btn btn-outline-light" type="button"><i class="fas fa-moon"></i>
+                        Dark Mode
+                    </button>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="container-fluid">
         <!-- Seccion bienvenida -->
         <section class="row">
             <div class="col text-center mt-3 div-ancho-75">
@@ -44,24 +101,24 @@
         <!-- Seccion videos -->
         <section class="row mt-5 text-center">
             <hr class="mt-3">
-            <div class="col-md-4 col-sm-12 mt-4 mb-4">
+            <div class="col-md-4 col-sm-12 my-4">
                 <h4 class="fw-bold text-responsive">Next show: March 12</h4>
-                <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/p5kLLJ13Uxw" title="Upcoming Show" allowfullscreen></iframe>
+                <div class="ratio ratio-16x9 ">
+                    <iframe class="rounded-3" src="https://www.youtube.com/embed/p5kLLJ13Uxw" title="Upcoming Show" allowfullscreen></iframe>
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 mt-4 mb-4">
+            <div class="col-md-4 col-sm-12 my-4">
                 <h4 class="fw-bold text-responsive">My latest live show</h4>
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/p5kLLJ13Uxw" title="Upcoming Show" allowfullscreen></iframe>
+                    <iframe class="rounded-3" src="https://www.youtube.com/embed/p5kLLJ13Uxw" title="Upcoming Show" allowfullscreen></iframe>
                 </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 mt-4 mb-4">
+            <div class="col-md-4 col-sm-12 my-4">
                 <h4 class="fw-bold text-responsive">My latest video</h4>
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/p5kLLJ13Uxw" title="Upcoming Show" allowfullscreen></iframe>
+                    <iframe class="rounded-3" src="https://www.youtube.com/embed/ZJ7g2g_SN5A" title="Upcoming Show" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -89,39 +146,42 @@
         </section>
 
         <!-- Seccion donaciones -->
-        <section class="row text-center" id="support">
+        <section class="row gx-0 text-center" id="support">
             <hr class="mt-3">
-            <div class="col-12 mt-4 mb-4 div-ancho-medio">
+            <div class="col-12 my-4 div-ancho-medio">
                 <h4 class="fw-bold">Show your support!</h4>
                 <p>Thank you for getting this far on the website! If you like what I do and want me to keep making more content, you can show your support by donating through <em>PayPal</em> or <em>Buy Me A Cofee</em> by clicking the links below. Any amount counts!</p>
             </div>
             
-            <div class="row justify-content-between">
-                <div class="card mb-3 p-2" style="max-width: 540px;">
+            <!-- Div con tarjetas -->
+            <div class="row ms-0 justify-content-center">
+                <!-- Card PayPal -->
+                <div class="card mb-3 me-lg-2 me-sm-0 p-2 shadow" style="max-width: 540px;">
                     <div class="row g-0 d-flex align-items-center">
                         <div class="col-md-4">
-                            <a href="https://www.paypal.com/paypalme/kanirj8" target="_blank"><img src="assets/img/paypal.png" class="img-fluid rounded mx-auto img-donacion" alt="..."></a>
+                            <img src="assets/img/paypal.png" class="img-fluid rounded mx-auto img-donacion" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h4 class="card-title">PayPal</h4>
                                 <p class="card-text">Support my content through PayPal. Thank you so much for your donation!</p>
-                                <a href="https://www.paypal.com/paypalme/kanirj8" target="_blank" class="btn btn-primary text-light">Donate!</a>
+                                <a href="https://www.paypal.com/paypalme/kanirj8" target="_blank" class="btn btn-primary text-light stretched-link">Donate!</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card mb-3 p-2" style="max-width: 540px;">
+                <!-- Card BMAC -->
+                <div class="card mb-3 ms-lg-2 ms-sm-0 p-2 shadow" style="max-width: 540px;">
                     <div class="row g-0 d-flex align-items-center">
                         <div class="col-md-4">
-                            <a href="https://www.buymeacoffee.com/rj8mp" target="_blank"><img src="assets/img/bmac.png" class="img-fluid rounded mx-auto img-donacion" alt="..."></a>
+                            <img src="assets/img/bmac.png" class="img-fluid rounded mx-auto img-donacion" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h4 class="card-title">Buy Me A Coffee</h4>
                                 <p class="card-text">Show your appreciation through Buy Me A Coffee. Thank you for donating!</p>
-                                <a href="https://www.buymeacoffee.com/rj8mp" target="_blank" class="btn btn-primary text-light">Donate!</a>
+                                <a href="https://www.buymeacoffee.com/rj8mp" target="_blank" class="btn btn-primary text-light stretched-link">Donate!</a>
                             </div>
                         </div>
                     </div>
@@ -133,7 +193,6 @@
         <section class="row text-center mb-3">
             <hr class="mt-3">
             <div class="col-12 mt-4 div-ancho-medio">
-                <!-- #TODO Revisar ancho de texto segun tamaño -->
                 <h4 class="fw-bold">Contact me!</h4>
                 <p class="mb-3">If you want to send me a message, or buy my covers, tracks and more, contact me via the form below. Can't wait to hear from you &#128521;</p>
             </div>
@@ -169,56 +228,57 @@
                 </div>
 
                 <!-- Boton de envio -->
-                <button type="submit" class="btn btn-primary text-light">SEND</button>
+                <button type="submit" class="btn btn-primary text-light" id="form-send">SEND</button>
             </form>
-        </section> 
+        </section>
+        
+        <div class="row">
+            <div class="d-flex flex-column align-items-end my-4">
+                <div class="d-flex flex-column align-items-center">
+                    <a href="#top"><i class="fas fa-circle-arrow-up text-primary"></i></a>
+                    <a href="#top" class="text-decoration-none text-dark">Go up!</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer class="navbar bg-primary flex-column flex-lg-row align-items-center p-3">
+    <footer class="navbar navbar-secondary bg-primary bg-gradient p-3">
+        <div class="container-fluid d-flex flex-lg-row flex-column justify-content-between align-items-center">
+            <!-- Copyright -->
+            <div class="d-flex align-items-center mt-2">
+                <i class="fas fa-copyright text-light mb-2 me-1"></i>
+                <h5 class="text-light">RJ8 2023</h5>
+            </div>
 
-        <div class="d-flex mt-2">
-            <i class="fas fa-copyright text-light mt-2 me-1"></i>
-            <h4 class="text-light">RJ8 2023</h4>
-        </div>
-
-        <div class="mt-3 d-none d-lg-block">
-            <p class="copyright text-light fw-light">Web design by <a href="https://eliasvelazquez.netlify.app/" target="_blank" class="text-decoration-none text-light fw-normal">Elias Velazquez</a></p>
-        </div>
-        
-        <div class="text-center mt-2">
-            <!-- Youtube -->
-            <a href="https://www.youtube.com/@rj8mp" target="_blank"><i class="fab fa-youtube fs-1 text-light" ></i></a>
-            <!-- Twitter -->
-            <a href="https://twitter.com/rj8covers" target="_blank"><i class="fab fa-twitter fs-1 text-light" ></i></a>
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/rj8covers/" target="_blank"><i class="fab fa-instagram fs-1 text-light" ></i></a>
-            <!-- TikTok -->
-            <a href="https://www.tiktok.com/@rj8covers" target="_blank"><i class="fab fa-tiktok fs-2 text-light" ></i></a>
-            <!-- Discord -->
-            <a href="https://discord.gg/rcScyZgFqQ" target="_blank"><i class="fab fa-discord fs-1 text-light" ></i></a>
-            <!-- Telegram -->
-            <a href="https://t.me/+8brW3fzdDL1iZTJh" target="_blank"><i class="fab fa-telegram fs-1 text-light" ></i></a>
-        </div>
-        
-        <div class="mt-2 d-sm-block d-lg-none">
-            <p class="copyright text-light fw-light">Web design by <a href="https://eliasvelazquez.netlify.app/" target="_blank" class="text-decoration-none text-light fw-normal">Elias Velazquez</a></p>
+            <!-- Credito para escritorio -->
+            <div class="mt-3 d-none d-lg-block">
+                <p class="copyright text-light fw-light">Web design by <a href="https://eliasvelazquez.netlify.app/" target="_blank" class="text-decoration-none text-light fw-normal">Elias Velazquez</a></p>
+            </div>
+            
+            <!-- Redes sociales -->
+            <div class="text-center mt-2">
+                <!-- Youtube -->
+                <a href="https://www.youtube.com/@rj8mp" target="_blank"><i class="fab fa-youtube fs-3 text-light" ></i></a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/rj8covers" target="_blank"><i class="fab fa-twitter fs-3 text-light" ></i></a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/rj8covers/" target="_blank"><i class="fab fa-instagram fs-3 text-light" ></i></a>
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@rj8covers" target="_blank"><i class="fab fa-tiktok fs-4 text-light" ></i></a>
+                <!-- Discord -->
+                <a href="https://discord.gg/rcScyZgFqQ" target="_blank"><i class="fab fa-discord fs-3 text-light" ></i></a>
+                <!-- Telegram -->
+                <a href="https://t.me/+8brW3fzdDL1iZTJh" target="_blank"><i class="fab fa-telegram fs-3 text-light" ></i></a>
+            </div>
+            
+            <!-- Credito para movil -->
+            <div class="mt-2 d-sm-block d-lg-none">
+                <p class="copyright text-light fw-light">Web design by <a href="https://eliasvelazquez.netlify.app/" target="_blank" class="text-decoration-none text-light fw-normal">Elias Velazquez</a></p>
+            </div>
         </div>
         
     </footer>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
